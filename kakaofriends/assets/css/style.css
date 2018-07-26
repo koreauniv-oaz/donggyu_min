@@ -1,18 +1,30 @@
 header{
 	position:fixed;
-	width:70%;
-	z-index:9999;
-	margin-left: auto;
-	margin-right : auto;
-	left: 0;
-	right: 0;
-	height: 40px;
+	z-index:1;
+	width: 100%;
+	height: 80px;
+	background-color: white;
 }
 
 nav{
 	margin-top: 10px;
+	width:70%;
+	margin-left: auto;
+	margin-right : auto;
+	left: 0;
+	right: 0;
 }
 
+.navbar{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/*.navbar .navbar-nav .nav-link{
+	padding-left: 0;
+	padding-right: 0;
+}
+*/
 a{
 	text-decoration: none;
 	color: black;
@@ -30,4 +42,58 @@ i{
 
 .nav-item{
 	margin: 0;
+}
+
+section{
+	padding-top: 80px;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+}
+
+.gallery, .gallery .item{
+	height: 500px;
+	height: 500px;
+}
+
+.secondary-controls nav{
+	display: flex;
+	justify-content: space-between;
+	margin: 200px 0;
+	transform: translateY(-50%);
+	vertical-align: middle;
+	width: 100%;
+
+}
+
+.secondary-controls a{
+	padding: 20px;
+}
+
+
+.row img, .col img{
+	max-height: 100%;
+	max-width: 100%;
+	border-radius: 10px;
+	margin-top: 10px;
+
+}
+
+button{
+	border : none;
+	border-radius: 30px;
+	padding : 10px;
+	width: 50%;
+	height: 40px;
+	background-color: #ccc;
+}
+
+.col-4 p{
+	font-size: 1em;
+}
+
+.col-4 h3{
+	font-size: 1.5em;
 }
