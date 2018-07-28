@@ -27,7 +27,7 @@
             <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="" id="logo">KAKAO FRIENDS</a>
+                        <a class="nav-link" href="index.php" id="logo">KAKAO FRIENDS</a>
                     </li>
                 </ul>
             </div>
@@ -35,10 +35,66 @@
             <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="" id="menu">카테고리</a>
+                    	<div class="dropdown">
+                        	<a class="nav-link" href="" id="menu">카테고리</a>
+                        	<div class="hover-checker"></div>
+                        	<div class="dropdown-content">
+                        		<div class="container">
+									<div class="row">
+										<div class="col-2">
+											<a href="#" id="">전체분류</a>
+											<a href="#" id="">전체</a>
+											<a href="#" id="">테마기획전</a>
+											<a href="#" id="">박물관</a>
+										</div>
+										<div class="col-4">
+											<a href="#" id="">전체분류</a>
+											<a href="#" id="">전체</a>
+											<a href="#" id="">테마기획전</a>
+											<a href="#" id="">박물관</a>
+										</div>
+
+										<div class="col-6">
+											<a href="#" id="">캐릭터별</a>
+											<a href="#" id="">link1</a>
+											<a href="#" id="">link1</a>
+											<a href="#" id="">link1</a>
+										</div>
+									</div>
+							    </div>
+							</div>
+						</div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="" id="menu">스토리</a>
+                    	<div class="dropdown">
+                        	<a class="nav-link" href="" id="menu">스토리</a>
+                        	<div class="hover-checker"></div>
+                        	<div class="dropdown-content">
+                        		<div class="container">
+									<div class="row">
+										<div class="col-2">
+											<a href="#" id="">전체분류</a>
+											<a href="#" id="">전체</a>
+											<a href="#" id="">테마기획전</a>
+											<a href="#" id="">박물관</a>
+										</div>
+										<div class="col-4">
+											<a href="#" id="">전체분류</a>
+											<a href="#" id="">전체</a>
+											<a href="#" id="">테마기획전</a>
+											<a href="#" id="">박물관</a>
+										</div>
+
+										<div class="col-6">
+											<a href="#" id="">캐릭터별</a>
+											<a href="#" id="">link1</a>
+											<a href="#" id="">link1</a>
+											<a href="#" id="">link1</a>
+										</div>
+									</div>
+							    </div>
+							</div>
+						</div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="" id="menu">뮤지엄</a>
@@ -52,13 +108,22 @@
                 </ul>
             </div>
 
+
             <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <span style="font-size: 1.5rem;"><i class="fa fa-search"></i></span>
                     </li>
                     <li class="nav-item">
-                        <span style="font-size: 1.5rem;"><i class="fa fa-user"></i></span>
+                        <div class="dropdown">
+                        <span style="font-size: 1.5rem;"><i class="fa fa-user"></i><a href=""></a></span>
+						  <div class="dropdown-content-side">
+						    <a href="login.php">로그인</a>
+						    <a href="signup.php">회원가입</a>
+						    <a href="#">찜</a>
+						    <a href="#">교환</a>
+						  </div>
+						</div>
                     </li>
 
                     <li class="nav-item">
@@ -71,16 +136,18 @@
                 </ul>
             </div>
         </nav>
+
+
    </header>
    
-<section>
+<section style="position: relative;">
 	<div class="gallery items-3">
 	  <div id="item-1" class="control-operator"></div>
 	  <div id="item-2" class="control-operator"></div>
 	  <div id="item-3" class="control-operator"></div>
 	
 	  <figure class="item">
-	    <h1>1</h1>
+	    <img src="assets/img/banner.png" alt="">
 	    <div class="secondary-controls">
             <div class="superfluous">
                 <nav>
@@ -205,7 +272,7 @@
 		<div class="row">
 			<div class="col-2">
 				<img src="assets/img/choco-cookie.jpeg" alt="">
-			</div>
+			</div>입
 			<div class="col-4" style="padding-top: 20px;">
 				<h3>카카오프렌즈 초코쿠키</h3>
 				<p>1500원 | 1.4 USD</p>
@@ -224,6 +291,18 @@
 	</div>
 
 </section>
+
+<hr>
+
+
+<footer>
+	<figure>
+		<img src="https://t1.daumcdn.net/friends/kfo-common/pc/bg_about_171213.png" alt="">
+	</figure>
+	<figure>
+		<img src="https://t1.daumcdn.net/friends/kfo-common/pc/tit_newfriends.png" alt="">
+	</figure>
+</footer>
 	<script src="assets/js/bootstrap.min.js"></script>
 	<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script> -->
 </body>

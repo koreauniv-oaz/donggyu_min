@@ -20,6 +20,71 @@ nav{
 	padding-right: 0;
 }
 
+
+
+.hover-checker{
+	width: 100%;
+	background-color: orange;
+	height: 5px;
+	display: none;
+	bottom: 0;
+	position: absolute;
+
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 1000px;
+    min-height: 500px;
+    margin-left: -300px;
+    /*margin-top: 15px;*/
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content-side{
+	display: none;
+    position: absolute;
+    background-color: #fff;
+  	min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+}
+
+.dropdown-content-side a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content-side a:hover {background-color: #ddd;}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content-side {display: block;}
+.dropdown:hover .hover-checker {display: block;}
+
 /*.navbar .navbar-nav .nav-link{
 	padding-left: 0;
 	padding-right: 0;
@@ -29,6 +94,15 @@ a{
 	text-decoration: none;
 	color: black;
 	font-weight: 
+}
+.secondary-controls nav{
+	position: absolute;
+	bottom: 0;
+}
+
+.item img{
+	width: 100%;
+	height: auto;
 }
 
 #logo{
@@ -54,7 +128,6 @@ section{
 }
 
 .gallery, .gallery .item{
-	height: 500px;
 	height: 500px;
 }
 
@@ -97,3 +170,13 @@ button{
 .col-4 h3{
 	font-size: 1.5em;
 }
+
+
+footer figure{
+	text-align: center;
+}
+
+footer {
+	padding: 100px;
+}
+
