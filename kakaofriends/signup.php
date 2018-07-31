@@ -115,7 +115,7 @@
 
 
 <section style="padding-top: 150px; width: 40%">
-	<form>
+	<form method="post" action="include/multi.php">
 		<div class="form-group">
 		    <label for="exampleInputEmail1">이름</label>
 		    <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="이름을 적어주세요">
@@ -123,20 +123,23 @@
 
 		 <div class="form-group">
 		    <label for="exampleInputEmail1">이메일</label>
-		    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="이메일을 적어주세요">
+		    <input name="id" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="이메일을 적어주세요">
 		    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 		 </div>
 	  <div class="form-group">
 	    <label for="exampleInputPassword1">비밀번호</label>
-	    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="비밀번호">
+	    <input name="pw" type="password" class="form-control" id="exampleInputPassword1" placeholder="비밀번호">
 	  </div>
 
 	  <div class="form-group">
 	    <label for="exampleInputPassword1">비밀번호확인</label>
-	    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="비밀번호">
+	    <input name="pw_re" type="password" class="form-control" id="exampleInputPassword1" placeholder="비밀번호">
 	  </div>
-	  
+	  <input type="hidden" name="cmd" value="1">
+
 	  <button type="submit" class="btn btn-primary">회원가입</button>
+
+
 	</form>
 </section>
 

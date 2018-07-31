@@ -2,7 +2,7 @@
     $db_server          = "localhost";
     $db_id              = "root";
     $db_password        = "root";
-    $db_name            = "user";
+    $db_name            = "kakao";
 
     $mysqli = new mysqli($db_server, $db_id, $db_password, $db_name);
     $mysqli->set_charset("utf8");

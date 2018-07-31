@@ -1,4 +1,5 @@
 <?php include('./dbconfig.php'); ?>
+<?php include('./multi.php'); ?>
 
 <!DOCTYPE html>
 <html lang="en">

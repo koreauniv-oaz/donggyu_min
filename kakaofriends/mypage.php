@@ -1,8 +1,8 @@
 <?
 include('include/dbconfig.php');
 session_start();
-?>
-
+ ?>
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -119,24 +119,7 @@ session_start();
    
 
 <section style="padding-top: 150px; width: 40%">
-	<form method="post" action="include/multi.php">
-	  <div class="form-group">
-	    <label for="exampleInputEmail1">이메일</label>
-	    <input name="id" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="이메일을 적어주세요">
-	    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-	  </div>
-	  <div class="form-group">
-	    <label for="exampleInputPassword1">비밀번호</label>
-	    <input name="pw" type="password" class="form-control" id="exampleInputPassword1" placeholder="비밀번호">
-	  </div>
-	  <div class="form-check">
-	   <label class="form-check-label" for="exampleCheck1">Check me out</label>
-	    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-	  </div>
-	  <input type="hidden" name="cmd" value="0">
-	  <button type="submit" class="btn btn-primary">로그인</button>
-
-	</form>
+	<h2>님 반갑습니다!</h2>
 </section>
 
 <footer>

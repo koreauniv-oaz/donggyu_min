@@ -9,7 +9,7 @@ define("CMD_REQUEST_REGISTER", 1);
 switch ((int) $_POST['cmd']) {
 	case "CMD_REQUEST_LOGIN":
 		
-		if (empty($_POST['id'] || $_POST['pw']) {
+		if (empty($_POST['id']) || empty($_POST['pw'])) {
 			die('<script>alert("empty!"); history.go(-1);</script>');
 		}	else{
 			$id = $_POST['id'];
@@ -39,7 +39,7 @@ switch ((int) $_POST['cmd']) {
 
 	case "CMD_REQUEST_REGISTER":
 	
-	if (empty($_POST['id'] || $_POST['pw'] || $_POST['name'] || $_POST['pw_re']) {
+	if (empty($_POST['id'] || empty($_POST['pw']) || empty($_POST['name']) || empty($_POST['pw_re'])) {
 		die('<script>alert("empty!"); history.go(-1);</script>');
 	}	else{
 		$id = $_POST['id'];
@@ -75,7 +75,7 @@ switch ((int) $_POST['cmd']) {
 
 			$query = "insert into user(name, id, pw) values($name, $id, $pw)";
 			$mysqli -> query($query);
-			die('<script>alert("complete"); location.href="./test.php";</script>');
+			die('<script>alert("complete"); location.href="../test.php";</script>');
 		}
 
 	}
