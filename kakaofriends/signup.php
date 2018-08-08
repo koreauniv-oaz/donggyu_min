@@ -1,3 +1,9 @@
+<?php
+include('include/dbconfig.php');
+session_start();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -118,7 +124,7 @@
 	<form method="post" action="include/multi.php">
 		<div class="form-group">
 		    <label for="exampleInputEmail1">이름</label>
-		    <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="이름을 적어주세요">
+		    <input name="name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="이름을 적어주세요">
 	 	</div>
 
 		 <div class="form-group">

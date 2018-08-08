@@ -3,6 +3,13 @@ include('include/dbconfig.php');
 session_start();
  ?>
  
+<?php
+if(!isset($_SESSION['name'])){
+    header("Location: ./login.php");
+}
+?>
+
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -95,10 +102,8 @@ session_start();
                         <div class="dropdown">
                         <span style="font-size: 1.5rem;"><i class="fa fa-user"></i><a href=""></a></span>
 						  <div class="dropdown-content-side">
-						    <a href="login.php">로그인</a>
-						    <a href="signup.php">회원가입</a>
-						    <a href="#">찜</a>
-						    <a href="#">교환</a>
+ 								<?php if(!isset($_SESSION['name'])){ echo '<a href="register.php">회원가입</a><a href="login.php">로그인</a>';}?>
+                                <?php if(isset($_SESSION['name'])){ echo '<a href="mypage.php">마이페이지</a>';}?>
 						  </div>
 						</div>
                     </li>
@@ -119,7 +124,8 @@ session_start();
    
 
 <section style="padding-top: 150px; width: 40%">
-	<h2>님 반갑습니다!</h2>
+	<h2><?php echo $_SESSION['name'];?>님 반갑습니다!</h2>
+	<a href="logout.php">로그아웃</a>
 </section>
 
 <footer>

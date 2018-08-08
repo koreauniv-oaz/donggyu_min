@@ -2,11 +2,10 @@
     $db_server          = "localhost";
     $db_id              = "root";
     $db_password        = "root";
-    $db_name            = "kakao";
+    $db_name            = "test";
 
     $mysqli = new mysqli($db_server, $db_id, $db_password, $db_name);
     $mysqli->set_charset("utf8");
-    //위아래가 같은 내용
     $conn = mysqli_connect($db_server, $db_id, $db_password, $db_name);
     mysqli_query($conn, "SET CHARSET UTF8");
     
