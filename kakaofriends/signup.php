@@ -121,32 +121,28 @@ session_start();
 
 
 <section style="padding-top: 150px; width: 40%">
+
 	<form method="post" action="include/multi.php">
-		<div class="form-group">
-		    <label for="exampleInputEmail1">이름</label>
-		    <input name="name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="이름을 적어주세요">
-	 	</div>
-
-		 <div class="form-group">
-		    <label for="exampleInputEmail1">이메일</label>
-		    <input name="id" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="이메일을 적어주세요">
-		    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-		 </div>
-	  <div class="form-group">
-	    <label for="exampleInputPassword1">비밀번호</label>
-	    <input name="pw" type="password" class="form-control" id="exampleInputPassword1" placeholder="비밀번호">
-	  </div>
-
-	  <div class="form-group">
-	    <label for="exampleInputPassword1">비밀번호확인</label>
-	    <input name="pw_re" type="password" class="form-control" id="exampleInputPassword1" placeholder="비밀번호">
-	  </div>
-	  <input type="hidden" name="cmd" value="1">
-
-	  <button type="submit" class="btn btn-primary">회원가입</button>
-
-
-	</form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">이름</label>
+                    <input name="name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="이름을 적어주세요">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">이메일</label>
+                    <input name="id" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="이메일을 적어주세요">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">비밀번호</label>
+                    <input name="pw" type="password" class="form-control" id="exampleInputPassword1" placeholder="비밀번호를 적어주세요">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">비밀번호 확인</label>
+                    <input name="pw_re" type="password" class="form-control" id="exampleInputPassword1" placeholder="비밀번호를 다시 적어주세요">
+                </div>
+                <input type="hidden" name="cmd" value="1">
+                <button type="submit" class="btn btn-primary"><input type="hidden" name="submit">회원가입</button>
+            </form>
 </section>
 
 

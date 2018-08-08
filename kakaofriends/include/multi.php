@@ -67,7 +67,7 @@ switch ((int) $_POST['cmd']) {
 		}
 			$query1 = "insert into user(name, id, pw) values('$name', '$id', '$pw')";
 			$mysqli->query($query1);
-			die('<script>alert("complete"); location.href="../login.php";</script>');
+			die('<script>alert("complete"); location.href="../mypage.php";</script>');
 		
 	}
 	break;
